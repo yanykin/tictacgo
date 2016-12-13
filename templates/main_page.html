@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Go</title>
+
+    <link href="static/css/style.css" rel="stylesheet" type="text/css"/>
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/tictacgo.js"></script>
+    <script>
+        $( document ).ready(function() {
+            generateField( {{.FieldSize}} );
+            makeWebSocketConnection( {{.Host}} );
+            enableCells();
+        });
+    </script>
+</head>
+<body>
+    <div id="dash">
+        <p>Current players: <span id="currentPlayers"></span></p>
+        <p id="gameStatus">Here is the game info.</p>
+    </div>
+
+    <div id="field">
+    </div>
+</body>
+</html>

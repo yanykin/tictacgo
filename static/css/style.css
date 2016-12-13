@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+   height: 100%;
+   background-color: #666;
+   text-align: center;
+}
+
+#dash {
+  margin: 0 auto;
+  height: 30px;
+  background-color: #999;
+}
+
+#field {
+  padding: 10px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.row {
+  display: block;
+  font-size: 0;
+}
+
+.cell {
+  font-size: 20px;
+  line-height: 40px;
+  font-family: Arial;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: #ccc;
+  margin: 3px;
+  text-align: center;
+  vertical-align: top;
+}
+.cell:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.cell.busy {
+    background-color: #ccc;
+}
+.cell.busy:hover {
+    cursor: not-allowed;
+}
+.cell.win {
+    background-color: #ff0;
+}
